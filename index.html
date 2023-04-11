@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="blackjack.js" async></script>
+    
+    <title>Blackjack</title>
+</head>
+<body>
+    <header>
+        <div class="game-title">Black Jack!</div>
+    </header>
+
+    <section class="container">
+        <div class="game-container">
+            <h1 id="messager">Submit Bet to Start Game ($10 - $1000)</h1>
+
+        <div class="card-container">
+            
+            <div>  
+            <h2> Player's Cards: <span id="p-cards">0</span></h2>
+            <h3>Sum: <span id="yourSum">0</span></h3>
+            </div> 
+
+
+            <div>  
+            <h2>Dealer's Cards: <span id="d-cards">0</span></h2>
+            <h3>Sum: <span id="dealerSum">0</span></h3>
+            </div> 
+
+        </div>
+
+            <div class="userInteract">
+                
+                <button id="double-btn" onclick="doubler()">DOUBLE</button>
+                <button id="stand-btn" onclick="stander()">STAND</button>
+                <button id="hit-btn" onclick="hitter()">HIT</button>
+
+            <form name="betform" id="betForm" action="" method="get">
+                <label for="betAmount" id="bet-label">Enter Your Bet</label>
+                <input type="number" id="betAmount"  size="8" min="10" max="1000" value="10">
+                <input type="submit" id="mySubmit" onclick="myBet()" value="Submit">
+            </form> 
+        </div>
+        
+        </div>
+    </section>
+    <footer>
+        <div class="new-game"><input class="new-game-btn"type="reset" form="betForm" value="New Game" onclick="document.location.reload(true)"> </div>
+    </footer>
+    
+    
+</body>
+</html>

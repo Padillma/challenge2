@@ -1,0 +1,97 @@
+body{
+    background-color:blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game-title{
+    text-align: center;
+    font-size:5rem ;
+}
+
+.container{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.game-container{
+    margin-top: 1em;
+    border: 4px solid black;
+   
+    min-height: 275px; /*change to max height later*/
+    
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:rgb(255, 255, 106);
+    background-color: green;
+    
+   
+ 
+}
+
+#messager{
+    color:  yellow;
+    text-align: center;
+    font-size: 2em;
+  
+    
+}
+
+#d-cards>span, #p-cards>span {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    margin-left: .4em;
+    padding: 1px;
+
+}
+
+
+
+
+.userInteract{
+    
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+button{
+    width: 75px;
+    padding: 2.5px;
+    border-radius: 0em;
+    text-align: center;
+     cursor: pointer;
+}
+
+.new-game{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-game-btn{
+    border: 1px solild black;
+    background-color:rgb(215, 0, 0);
+    color:white;
+    font-weight: bold;
+    padding: 10px auto 10px;
+    width:200px;
+    height:35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-game-btn:hover{
+    background-color:rgb(172, 25, 25);
+}
